@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kamikaze.firstkotlinprogram">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".QuoteApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstKotlinProgram"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@drawable/kotlinsplash"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@color/light_blue_600" />
+        <activity
+            android:name=".exoplayer.ExoPlayerMain"
+            android:exported="false" />
+        <activity
+            android:name=".databaseroomdb.RoomDBMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".quotesdatamodel.MainRecyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".navigation.NavigationMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenHome"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.GoogleLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPrefrence.DataShowCase"
+            android:exported="false" />
+        <activity
+            android:name=".workOnfragments.FragmentWithViewPagerAndBottomNavigationBar"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerPractice"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewPractice"
+            android:exported="false" />
+        <activity
+            android:name=".KotlinSecondPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

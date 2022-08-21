@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">FirstKotlinProgram</string>
+    <string name="button">Add</string>
+    <string name="button12">Button</string>
+    <string name="dice_roller1">Dice Roller</string>
+    <string name="recycler_view">Recycler View</string>
+    <string name="hello">=</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="nothing">+</string>
+    <string name="spinner">Spinner</string>
+
+    <string-array name="Months">
+        <item>January</item>
+        <item>February </item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>November</item>
+        <item>December</item>
+
+
+    </string-array>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="kotlin_practice">Kotlin Practice</string>
+    <string name="spinner2">Spinner</string>
+    <string name="recycler_view2">Recycler View</string>
+    <string name="calculator">Calculator</string>
+    <string name="fragments">Fragments</string>
+    <string name="shared_prefrence">Shared Prefrence</string>
+    <string name="dice_roller">Dice Roller</string>
+    <string name="work_manager">Work Manager</string>
+    <string name="exit_application">Exit Application</string>
+    <string name="login">Login</string>
+    <string name="exo_player">EXO Player</string>
+    <string name="view_model">View Model</string>
+    <string name="add_value">Add Value</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Last Page</string>
+    <string name="stranded_yes_she_was_now_the_first_person_ever_to_land_on_venus_but_that_was_of_little_consequence_her_name_would_be_read_by_millions_in_school_as_the_first_to_land_here_but_that_celebrity_would_never_actually_be_seen_by_her_she_looked_at_the_control_panel_and_knew_there_was_nothing_that_would_ever_get_it_back_into_working_order_she_was_the_first_and_it_was_not_clear_this_would_also_be_her_last">Stranded. Yes, she was now the first person ever to land on Venus, but that was of little consequence. Her name would be read by millions in school as the first to land here, but that celebrity would never actually be seen by her. She looked at the control panel and knew there was nothing that would ever get it back into working order. She was the first and it was not clear this would also be her last.The chair sat in the corner where it had been for over 25 years. The only difference was there was someone actually sitting in it. How long had it been since someone had done that? Ten years or more he imagined. Yet there was no denying the presence in the chair now.He was an expert but not in a discipline that anyone could fully appreciate. He knew how to hold the cone just right so that the soft server ice-cream fell into it at the precise angle to form a perfect cone each and every time. It had taken years to perfect and he could now do it without even putting any thought behind it. Nobody seemed to fully understand the beauty of this accomplishment except for the new worker who watched in amazement.</string>
+    <string name="navigation">Navigation</string>
+    <string name="hilt_paging">Hilt + Paging</string>
+    <string name="notes_app_with_roomdb">Notes App with RoomDB</string>
+    <string name="download_image">Download Image</string>
+    <string name="home_page">Home Page</string>
+    <!--    <string name="there">1. Data Binding-->
+
+    <!-- -> Some Basic Codes Of Data Binding-->
+
+    <!--&gt; Declaring Data Binding-->
+    <!--&gt;>> Code {-->
+
+    <!--private lateinit var binding : ActivityMainBinding-->
+
+    <!--//in OnCreate Method-->
+
+    <!--binding = DataBindingUtil.setContentView(this,R.layout.activity_main)-->
+
+    <!--//binding example of a  simple button-->
+    <!--binding.button.setOnClickListener{}-->
+    <!--}-->
+
+
+    <!--2. ViewModel-->
+    <!--ViewModel Class Holds the View For the Activity. Data in a Activity Changes when you rotate a Screen or any other changes occur like keyboard change and language change. View model Class starts when Activity is created and goes util activity is destroyed from the memory.-->
+
+
+    <!--&gt;> Adding to library-->
+    <!--LiveData &amp; ViewModel-->
+    <!--  implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha01")-->
+    <!--  implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha01")-->
+
+    <!--&gt;>Creating a View Model Class-->
+    <!--YOu Have to create a View model class which holds the data of view. When activty changes.-->
+
+    <!--&gt;>>Code {-->
+    <!--class MainActivityViewModel: ViewModel(){-->
+    <!--//Put Your Data in View Model Iam Putting Counter Count Function-->
+    <!--private var count = 0-->
+    <!--fun getCurrentCount():Int{-->
+    <!--   return count-->
+    <!--}-->
+
+    <!--fun getUpdatedCount():INt{-->
+    <!--return count++-->
+    <!--}-->
+    <!--}-->
+
+    <!--&gt;> Creating a Instance of Viewmodel in Main Activty-->
+    <!--&gt;>> Code-->
+    <!--private lateinit var viewModel : MainActivityViewModel-->
+
+    <!--//Now Putting Data in OnCreate Method-->
+
+    <!--//Making Instance of ViewModel-->
+    <!--viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)-->
+
+    <!--//Example of implementation-->
+    <!--binding.countText.text = viewModel.getCurrentCount().toString()-->
+
+
+    <!--&gt;>>>Question ->When is the ViewModel\'s onCleared() called?-->
+    <!--A ViewModel\'s onCleared() is called when the ViewModel is no longer required.-->
+    <!--It will be called when the app is put into the background and the app process is killed in order to free up the system\'s memory.-->
+    <!--When the user invokes finish() of an activity, its view model will be cleared(). Also when we click on the back button,  ViewModel of current activity will be cleared (onCleared()  will be invoked)-->
+
+    <!--2(B).View Model Factory-->
+
+    <!--View Model Factory is used to pass Multiple Arguments in Viewmodel.-->
+    <!--You pass your ViewModel arguments to the ViewModelProvider.Factory through constructor or any other pattern you prefer (Singleton, FactoryPattern etc.). And it is because you cannot call ViewModel constructor in Activity or Fragment when you initializing ViewModel and you want to set ViewModel constructor’s argument value so that’s why you need to pass argument value to ViewModelProvider.Factory and it will create your ViewModel.-->
+
+    <!--***********SINGLETON**************-->
+    <!--A singleton is a design pattern that restricts the instantiation of a class to only one instance. Notable uses include controlling concurrency and creating a central point of access for an application to access its data store.-->
+    <!--***********SINGLETON**************-->
+
+    <!--&gt;> Creating ViewModelFactory-->
+    <!--&gt;>>Adding Code in View Model-->
+    <!--&gt;>>>Adding Constructor Perameter in (starting Total value)-->
+
+    <!--class MainActivityViewModel(startingTotal : Int):ViewModel(){}-->
+    <!--// Assign perameter to variable-->
+    <!--private var total =0-->
+
+    <!--init{-->
+    <!--total =startingTotal-->
+    <!--}-->
+
+
+    <!--&gt;> Code In MainActivity-->
+    <!--//Defining reference Variable-->
+    <!--private lateinit var viewModelFactory:MainActivityViewModelFactory-->
+
+    <!--//Passing Starting Value-->
+    <!--viewModelFactory = MainActivityViewModelFactory("Pass starting Value Like ->"125)-->
+
+    <!--//Creating Instance in onCreate Of ViewModel-->
+    <!--viewModel = ViewModelProvider(this,viewModelFactory).get(MainActivityViewModel::class.java)-->
+
+    <!--3. LiveData-->
+    <!-- ->LiveData Notify Views when underlying database changes.-->
+    <!-- ->LiveData is a Lifecycle aware observable data holder class.-->
+    <!-- -> LiveData Only updates observers in an active lifecycle state.-->
+    <!-- -> LiveData Automatically updates UI when app data changes.-->
+    <!-- -> No need to write code to handle lifecycle manually.-->
+    <!--&gt;>>What is Mutable LiveData-->
+    <!--MutableLiveData is mutable and is a subclass of LiveData. In MutableLiveData we can observe and set the values using postValue() and setValue() methods (the former being thread-safe) so that we can dispatch values to any live or active observers.-->
+    <!--Mutable LiveData is used to edit in data.-->
+    <!-- -> A MutableLiveData object allows us to change/update its data.-->
+    <!--&gt;>>>Code-->
+    <!--&gt;> Code in ViewModel //Taking reference of Upper COde ANd Udemy Course-->
+    <!--//changing var Type-->
+    <!--var total = MutableLiveData()-->
+    <!--//changing code in init block-->
+    <!--init{-->
+    <!--total.value = startingTotal-->
+    <!--}-->
+    <!--//Editing to setTotal method-->
+    <!--fun setTotal(input:Int){-->
+    <!--total.value =(total.value)?.plus(input)-->
+    <!--}-->
+    <!--//Code in main Activity-->
+    <!--viewModel.total.observe(this,Observer{-->
+    <!--binding.TextView.text = it.toString()-->
+    <!--})-->
+    <!--//remove other unnecessary code-->
+
+    <!--&gt;>>>Important Changes-->
+    <!--//We have to create over Mutable Live data private so no one can access it-->
+    <!--&gt;>>>code-->
+    <!--private var total = MutableLiveData()-->
+    <!--//Now YOu can't Use it in main activity-->
+    <!--val totalData : LiveData-->
+    <!--get() =total-->
+    <!--//Change total in mainActivity with totalData-->
+
+    <!--4. View Model With DataBinding-->
+    <!--In this we diretly bind data with layout in binding-->
+
+
+    <!--4(b). Two way DataBinding-->
+    <!--When do we use Two Way Data Binding?-->
+    <!--we can use one way data binding to show the user some data(app to user data flow).-->
+    <!--We can also use one way data binding to get user unput(user to app data flow).-->
+    <!--if, for some reason, we want to both show data and get userr input over the same widget,-->
+    <!--in other words, if we need a two-way data flow, we should use two-way data binding.-->
+
+    <!--  </string>-->
+    <string name="media_url_mp4">https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4</string>
+    <string name="media_url_dash"><![CDATA[https://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+    <string name="media_url_mp3">https://storage.googleapis.com/exoplayer-test-media-0/Jazz_In_Paris.mp3</string>
+</resources>

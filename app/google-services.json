@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "5064010200",
+    "project_id": "firstkotlinprogram-14de8",
+    "storage_bucket": "firstkotlinprogram-14de8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5064010200:android:4c97107ea277c3b1332aad",
+        "android_client_info": {
+          "package_name": "com.kamikaze.firstkotlinprogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5064010200-k20qngf49h2rqhskek98gscbqkmqvme0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnifh6d5i89b7QVz-fs6PZLictYasbWdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5064010200-k20qngf49h2rqhskek98gscbqkmqvme0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

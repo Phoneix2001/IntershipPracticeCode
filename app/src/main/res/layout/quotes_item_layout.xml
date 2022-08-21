@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/primaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="50dp"
+        android:padding="10dp"
+        android:elevation="50dp"
+        android:outlineAmbientShadowColor="@color/light_blue_600">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="For first Value"
+            android:textSize="20sp"
+            android:id="@+id/firstid"/>
+
+        <TextView
+            android:id="@+id/secondid"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="For Second Value"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:gravity="end"
+            android:id="@+id/thirdid"
+            android:text="For Ending "
+            android:layout_marginEnd="35dp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

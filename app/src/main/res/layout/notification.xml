@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagenew"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/kotlinsplash" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title12345"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="textview"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discription"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="textview"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

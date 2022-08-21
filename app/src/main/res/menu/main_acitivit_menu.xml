@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/spinner"
+        android:title="@string/spinner2"
+        />
+    <item android:id="@+id/recyclerView"
+        android:title="@string/recycler_view2" />
+    <item android:id="@+id/calculator"
+        android:title="@string/calculator" />
+    <item android:id="@+id/fragments"
+        android:title="@string/fragments"/>
+    <item android:id="@+id/sharedprefrence"
+        android:title="@string/shared_prefrence"/>
+    <item android:id="@+id/diceroller"
+        android:title="@string/dice_roller" />
+    <item android:id="@+id/viewmodel"
+        android:title="@string/view_model"/>
+    <item android:id="@+id/exoplayer"
+        android:title="@string/exo_player"/>
+    <item android:id="@+id/navigation"
+        android:title="@string/navigation"/>
+    <item  android:id="@+id/roomdb"
+        android:title="@string/notes_app_with_roomdb"/>
+    <item android:id="@+id/Hilt"
+        android:title="@string/hilt_paging"/>
+    <item android:id="@+id/exitapplication"
+        android:title="@string/exit_application"/>
+    <item android:id="@+id/Login"
+        android:title="@string/login"
+        app:showAsAction="ifRoom"
+        />
+</menu>

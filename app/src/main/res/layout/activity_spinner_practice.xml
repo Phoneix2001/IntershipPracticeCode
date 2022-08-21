@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpinnerPractice">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner2"
+                android:layout_width="409dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="122dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="330dp"
+                android:entries="@array/Months"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                app:cornerRadius="200dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
+                android:layout_width="200dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginBottom="183dp"
+
+                android:text="New style Button"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
